@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+
+     <servlet>
+     	<servlet-name>insertServlet</servlet-name>
+     	<servlet-class>tourOfferPackage.insertServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>insertServlet</servlet-name>
+     	<url-pattern>/insertServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>Offergetall</servlet-name>
+     	<servlet-class>tourOfferPackage.Offergetall</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>Offergetall</servlet-name>
+     	<url-pattern>/Offergetall</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+     	<servlet-name>UpdateServlet</servlet-name>
+     	<servlet-class>tourOfferPackage.UpdateServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>UpdateServlet</servlet-name>
+     	<url-pattern>/UpdateServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>DeleteServlet</servlet-name>
+     	<servlet-class>tourOfferPackage.DeleteServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>DeleteServlet</servlet-name>
+     	<url-pattern>/DeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     <servlet>
+    <servlet-name>Offerlistpage</servlet-name>
+    <servlet-class>tourOfferPackage.Offerlistpage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    <servlet-name>Offerlistpage</servlet-name>
+    <url-pattern>/Offerlistpage</url-pattern>
+	</servlet-mapping>
+	
+
+<!-- Admin System -->
+
+
+     <servlet>
+     	<servlet-name>AdminInsertServlet</servlet-name>
+     	<servlet-class>adminPackage.AdminInsertServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>AdminInsertServlet</servlet-name>
+     	<url-pattern>/AdminInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<servlet-class>adminPackage.LoginServlet</servlet-class>
+     </servlet>
+     <servlet-mapping>
+     	<servlet-name>LoginServlet</servlet-name>
+     	<url-pattern>/LoginServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>adminPackage.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+
+
+<!-- Deegau xml-->
+
+ <!--  User Register  -->
+     <servlet>
+     	<servlet-name>DvpRegServlet</servlet-name>
+     	<servlet-class>RegisterPack.DvpRegServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>DvpRegServlet</servlet-name>
+     	<url-pattern>/DvpRegServlet</url-pattern>
+     </servlet-mapping>
+     
+      <!--  User login  -->
+     <servlet>
+     	<servlet-name>DvpLoginServlet</servlet-name>
+     	<servlet-class>RegisterPack.DvpLoginServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>DvpLoginServlet</servlet-name>
+     	<url-pattern>/DvpLoginServlet</url-pattern>
+     </servlet-mapping>
+     
+      <!--  User data update  -->
+     <servlet>
+     	<servlet-name>DvpProfileServlet</servlet-name>
+     	<servlet-class>RegisterPack.DvpProfileServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>DvpProfileServlet</servlet-name>
+     	<url-pattern>/DvpProfileServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!--  User data update  -->
+      <servlet>
+     	<servlet-name>DvpUserUpdateServlet</servlet-name>
+     	<servlet-class>RegisterPack.DvpUserUpdateServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>DvpUserUpdateServlet</servlet-name>
+     	<url-pattern>/DvpUserUpdateServlet</url-pattern>
+     </servlet-mapping>
+     
+     <!--  User data Delete  -->
+      <servlet>
+     	<servlet-name>DvpUserDeleteServlet</servlet-name>
+     	<servlet-class>RegisterPack.DvpUserDeleteServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>DvpUserDeleteServlet</servlet-name>
+     	<url-pattern>/DvpUserDeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     
+     
+     
+  
+     
+      <!-- pawan -->
+     
+     
+     <servlet>
+     	<servlet-name>pwInsertServlet</servlet-name>
+     	<servlet-class>BookingPackage.pwInsertServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>pwInsertServlet</servlet-name>
+     	<url-pattern>/pwInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>pwGetAllServlet</servlet-name>
+     	<servlet-class>BookingPackage.pwGetAllServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>pwGetAllServlet</servlet-name>
+     	<url-pattern>/pwGetAllServlet</url-pattern>
+     </servlet-mapping>
+
+     <servlet>
+     	<servlet-name>pwUpdateServlet</servlet-name>
+     	<servlet-class>BookingPackage.pwUpdateServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>pwUpdateServlet</servlet-name>
+     	<url-pattern>/pwUpdateServlet</url-pattern>
+     </servlet-mapping>
+
+     <servlet>
+     	<servlet-name>pwDeleteServlet</servlet-name>
+     	<servlet-class>BookingPackage.pwDeleteServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>pwDeleteServlet</servlet-name>
+     	<url-pattern>/pwDeleteServlet</url-pattern>
+     </servlet-mapping>
+     
+     
+     
+     
+     
+     
+     
+     <!-- luhith-->
+     
+     <servlet>
+    <servlet-name>AddContactusServices</servlet-name>
+    <servlet-class>servlets.AddContactusServices</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddContactusServices</servlet-name>
+    <url-pattern>/AddContactusServices</url-pattern>
+</servlet-mapping>
+     
+     
+     
+     
+     
+
+
+
+
+
+
+
+
+</web-app>

@@ -1,0 +1,1128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+HR+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Gloria+Hallelujah&family=Kaushan+Script&family=Merienda&family=Orbitron:wght@400..900&family=Playwrite+HR+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Cuprum:ital,wght@0,400..700;1,400..700&family=Gloria+Hallelujah&family=Kaushan+Script&family=Merienda&family=Orbitron:wght@400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+HR+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale:0.5;
+  }
+  to{
+    opacity: 1;
+    scale:1;
+  }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    background-color: #eeeeee6c;
+    
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000; /* Example: Change to black or any color you prefer */
+}
+
+.profile{
+	margin-top:1%;
+	margin-right:-55%;
+}
+
+.profile a{
+	color:white;
+	padding-left:10px;
+	font-family: "Josefin Sans", sans-serif;
+	font-size:17px;
+}
+
+.profile a:hover{
+	color:pink;
+	
+}
+
+.upper{
+  background-image: url(../images/back.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+.upper .top h3{
+    background-color: rgba(12, 12, 59, 0.618);
+    color: white;
+    font-family: "Merienda", serif;
+    padding: 0%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin: 0%;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 50px;
+    border-color: black;
+}
+
+.header-main{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(90, 169, 239, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-nav{
+    width: fit-content;
+}
+
+.header-main-nav ul{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.header-main-nav ul li{
+    display: inline;
+    float: LEFT;
+    
+}
+
+.header-main-nav ul li a{
+    padding: 0 10px;
+    margin-top: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.header-main-nav ul li a:hover{
+  color: #7fc5ff;
+  transition: 0.5s;
+}
+
+.sign button {
+    --primary-color: #f70000b3;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 3em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    height: 35px;
+    margin-top: 5%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sign button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.sign button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.sign button:hover {
+  background-color: var(--hover-color);
+}
+
+.sign button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.sign button:hover .arrow:before {
+  right: 0;
+}
+
+.word{
+  margin-top: 25px;
+  margin-left: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+  
+.word a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+/* From Uiverse.io by biswacpcode */ 
+.word button {
+  color: pink;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 30px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.word button::before {
+  margin-left: auto;
+}
+
+.word button::after, button::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+.word button:hover::after, button:hover::before {
+  width: 100%;
+}
+
+.upper .updates h1{
+  color: white;
+  font-size: 55px;
+}
+
+.upper .updates table tr td{
+  background-color: rgba(255, 255, 255, 0.877);
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-left: 25PX;
+  box-shadow: 20px 20px rgba(109, 103, 103, 0.438);
+}
+
+/*after the photo*/
+.awards{
+  margin-top: 0.3%;
+}
+
+.awards h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: #000000;
+}
+
+.awards h4{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+.awards table tr td p{
+  margin-top: -10%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.awards img{
+  box-shadow: 1px 1px 30px 2px black;
+}
+
+/*Updates*/
+.packages h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  font-size: 45px;
+}
+
+.packages a{
+	color: #DC143C;
+	font-weight: bold;
+}
+
+.packages a:hover{
+	color: #0056b3;
+}
+
+section.card01 {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-image: url('../images/card01.jpg');
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.card01 svg {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+}
+.card01:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #000000b2;
+  color: #000000;
+}
+
+.card__content01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fbfbfba7;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card01:hover .card__content01 {
+  transform: rotateX(0deg);
+}
+
+.card__title01 {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card01:hover svg {
+  scale: 0;
+}
+
+.card__description01 {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+/*card2*/
+section.card02 {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-image: url('../images/card02.jpg');
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.card02 svg {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+}
+.card02:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #000000b2;
+  color: #000000;
+}
+
+.card__content02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fbfbfba7;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card02:hover .card__content02 {
+  transform: rotateX(0deg);
+}
+
+.card__title02 {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card02:hover svg {
+  scale: 0;
+}
+
+.card__description02 {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+ /*card 03*/
+section.card03 {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-image: url('../images/card03.webp');
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.card03 svg {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+}
+.card03:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #000000b2;
+  color: #000000;
+}
+
+.card__content03 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fbfbfba7;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card03:hover .card__content03 {
+  transform: rotateX(0deg);
+}
+
+.card__title03 {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card03:hover svg {
+  scale: 0;
+}
+
+.card__description03 {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+}
+ /*card 04*/
+section.card04 {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-image: url('../images/card04.webp');
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+.card04 svg {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+}
+.card04:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #000000b2;
+  color: #000000;
+}
+
+.card__content04 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fbfbfba7;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card04:hover .card__content04 {
+  transform: rotateX(0deg);
+}
+
+.card__title04 {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card04:hover svg {
+  scale: 0;
+}
+
+.card__description04 {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+}
+
+/*Package-Promot*/
+.package-promot{
+  margin-top: -2% ;
+  background-color: rgba(228, 228, 137, 0.784);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.package-promot h1{
+  font-family: "Kaushan Script", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: rgb(32, 37, 36);
+}
+
+.package-promot p{
+  font-family:"Philosopher", serif;
+  font-size: 17px;
+  color: rgba(9, 9, 9, 0.907);
+  font-weight: 80px;
+  padding: 2% 2% 2% 2%;
+}
+
+.package-promot img{
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.package-promot table{
+  margin-top: 5%;
+}
+
+.package-promot button {
+  width: 18em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 6px 6px 12px #000000,
+              -6px -6px 12px #000000;
+              
+}
+
+.package-promot button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 30em;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+.package-promot button:hover::before {
+ width: 18em;
+}
+
+.newoffers .package-promot tr td{
+  background-color: #ffffff00;
+  padding: 15px 5px 10px 20px;
+}
+
+
+/*Sri Lanka*/
+.sri{
+  padding-top: 3%;
+}
+
+.sri h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+  padding-left: 2%;
+}
+
+.sri .country table img{
+  box-shadow: 1px 1px 30px 2px black;
+}
+
+.sri .country{
+  display: flexbox;
+  background-image: url('../images/paper.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.sri .country h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  color: #095121;
+}
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(252, 12, 12);
+  box-shadow: 0 0 0 2px rgb(165, 5, 0);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(208, 0, 0);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 20px;
+  background-color: rgb(228, 94, 94);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(255, 92, 47);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/*div-sri .beauty*/
+.sri .beauty table tr td{
+  justify-content: space-around;
+}
+
+.sri .beauty table tr td .card {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 320px;
+  max-height: 330px;
+  background-color: rgba(226, 224, 224, 0.342);
+  border-radius: 10px;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.sri .beauty table tr td .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sri .beauty table tr td .card .card-image-container1 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/hotel.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sri .beauty table tr td .card-title {  
+  margin: 0;
+  font-size: 17px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  color: #226b79;
+  cursor: default;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.sri .beauty table tr td .card-des {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #000000;
+  cursor: default;
+}
+
+/*people*/
+.sri .beauty table tr td .card .card-image-container2 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/people.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*sea*/
+.sri .beauty table tr td .card .card-image-container3 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/beach.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*nature*/
+.sri .beauty table tr td .card .card-image-container4 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/nature.webp);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*culture*/
+.sri .beauty table tr td .card .card-image-container5 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/culture.webp);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*train*/
+.sri .beauty table tr td .card .card-image-container6 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/TRAIN.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*wildLife*/
+.sri .beauty table tr td .card .card-image-container7 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/wild-life.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*History*/
+.sri .beauty table tr td .card .card-image-container8 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/history.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*SriLankan airline*/
+.sri .beauty table tr td .card .card-image-container9 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/airline.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*colombo*/
+.sri .beauty table tr td .card .card-image-container10 {
+  width: 100%;
+  height: 64%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-image: url(../images/colombo.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Ending*/
+.end{
+  margin-right: 2%;
+  margin-left: 2%;
+  background-image: url(../images/paper2.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.end .cap p{
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+}
+
+.end .offer{
+  margin-top: 10%;
+}
+
+.end .content{
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* From Uiverse.io by Akshdeep74644 */ 
+.end .sub .container {
+  position: relative;
+  width: 250px;
+}
+
+.end .sub .container input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #222;
+  padding: 8px;
+}
+
+.end .sub .container label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(105, 105, 105, 0.7);
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: .5s;
+  font-weight: bold;
+}
+
+.end .sub .container input:valid ~ label,
+.end .sub .container input:focus ~ label {
+  color: rgb(10, 131, 212);
+  transform: translateY(-15px);
+  font-size: .6rem;
+}
+
+.end .sub .container i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #222;
+}
+
+.end .sub .container i:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff1b69, #ff0, #2196f3, #9c27b0, #ff1b69);
+  animation: animate 3s linear infinite;
+}
+
+.end .submit input{
+  width: 100px;
+  height: 35px;
+  padding: 2px 2px 2px 2px;
+  background-color: rgba(255, 255, 255, 0.844);
+  border-color: #ec5a16;
+  border-radius: 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.end .submit input:hover{
+  background-color: #fda59d;
+}
+
+/*offer*/
+.offer{
+  padding: 0.5% 0% 1% 0%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.offer h3{
+  font-family:sans-serif;
+  font-size: 35px;
+  margin-top: 3%;
+  padding-left: 0%;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  color: rgb(23, 2, 113);
+  text-shadow: 1px 1px  black;
+}
+
+.offer p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  color: hwb(0 0% 100%);
+  background-color: rgba(220, 64, 64, 0.616);
+  margin: 0% 7% 0% 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.award-design{
+  margin-top: 5%;
+  padding-left: 1%;
+}
+
+/*footer*/
+.footers{
+  background-color: rgba(14, 1, 66, 0.892);
+  margin-top: 1%;
+  padding-top: 2%;
+  justify-content: center;
+}
+
+.footers .icons a i{
+  color: #ffdcdc;
+  font-size: 25px;
+  letter-spacing: 10px;
+  justify-content: center;
+}
+
+.footers .icons a i:hover{
+  color: #7fc5ff;
+}
+
+.footers .head-footer{
+  padding-right: 50px;
+}
+.footers .head-footer ul li{
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  padding-right: 1%;
+  
+}
+
+.footers .head-footer ul li a{
+  word-spacing: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footers .head-footer ul li a:hover{
+  color: #7fc5ff;
+  transition: 0.5s;
+  
+}
+
+.footers .contact p{
+  margin-top: 3%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.end-foot{
+  background-color: rgba(57, 102, 215, 0.714);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+.packagePost{
+  display: flex;
+  justify-content: space-around;
+}
+

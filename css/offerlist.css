@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+        /* notice-container styles */
+
+.notice-container {
+  width: 100%;
+  padding: 50px 60px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.notice-header {
+  text-align: center;
+  font-size: 38px;
+  color: #ff4f81;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.notice-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 30px 35px;
+  transition: all 0.3s ease;
+}
+
+.notice-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.notice-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notice-type {
+  font-weight: 600;
+  color: #3f5efb;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.uni-logo {
+  font-size: 16px;
+  color: #888;
+}
+
+.notice-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-gradient {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.gradient-yellow {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+
+.gradient-pink {
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+}
+
+.gradient-blue {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+}
+
+.gradient-green {
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+}
+
+.notice-content {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+.notice-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 15px;
+  color: #333;
+}
+
+.notice-meta div {
+  flex: 1 1 42%;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .notice-meta {
+    flex-direction: column;
+  }
+  
+  .notice-meta div {
+    flex: 1 1 100%;
+  }
+
+  .notice-container {
+    padding: 30px 20px;
+  }
+}

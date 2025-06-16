@@ -1,0 +1,80 @@
+/* Wrapper to center heading + form together */
+.booking-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); /* Adjust for nav + footer height */
+  padding: 40px 20px;
+  background-image: url(../images/mist.jpeg);
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.booking-wrapper {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.booking-wrapper h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+/* Table Styling */
+form table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #1f2937;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #f97316;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ea580c;
+}
