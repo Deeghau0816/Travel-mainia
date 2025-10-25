@@ -1,98 +1,48 @@
-```markdown
-# TravelMania
+# 🌍 TravelMania
 
-TravelMania is a Java web application for property, tour and booking management built with JSP, Servlets and MySQL. The app follows the MVC pattern and provides full CRUD operations with role-based access and a responsive user interface.
+**TravelMania** is a **Java web application** designed for managing tours, bookings, and user registrations.  
+Built with **JSP**, **Servlets**, and **MySQL**, the system follows the **MVC architecture** to ensure scalability, maintainability, and separation of concerns.
 
-Repository: https://github.com/Deeghau0816/Travel-mainia
-
----
-
-## Key Features
-
-- Manage properties, tours, and bookings
-- Full CRUD (Create, Read, Update, Delete)
-- JSP-based user interfaces (views)
-- Java Servlets + JDBC for backend (controllers & persistence)
-- MVC architecture (model, view, controller separation)
-- Persistent storage in MySQL
-- Basic authentication and role-based access control
-- Includes SQL schema/data import script (tourguid.sql)
+🔗 **Repository:** [github.com/Deeghau0816/Travel-mainia](https://github.com/Deeghau0816/Travel-mainia)
 
 ---
 
-## Tech Stack
+## 🚀 Project Overview
 
-- Frontend: JSP, HTML, CSS, JavaScript
-- Backend: Java Servlets, JDBC
-- Database: MySQL
-- Server: Apache Tomcat 9+
-- Architecture: MVC
+TravelMania provides an online platform to manage **tour packages, bookings, and admin operations** efficiently.  
+It supports full **CRUD functionality**, basic authentication, and a **role-based access control** system.
 
----
-
-## Repository overview
-
-Top-level folders and notable files in this repo:
-
-- BookingPackage/       — Booking-related classes
-- Controller/           — Controller helpers (may contain servlet helpers)
-- JS/                   — JavaScript assets
-- RegisterPack/         — Registration-related classes
-- WebJS/                — Web JavaScript / client-side scripts
-- adminPackage/         — Admin-related backend classes
-- model/                — Domain model classes (POJOs)
-- services/             — Service / business logic layer
-- servlets/             — Servlets (controllers for HTTP endpoints)
-- tourOfferPackage/     — Tour offering-related classes
-- tourguid.sql          — Database schema and seed data (important)
-- xml.xml               — Additional XML resource (inspect for usage)
-
-(Adjust any folder descriptions if you know they map to different responsibilities in your code.)
+As the **Team Leader**, I led the design and development of the full stack—overseeing database integration, servlet logic, and user interface components.
 
 ---
 
-## Quick start — Local development
+## ✨ Key Features
 
-Prerequisites
-- Java JDK 8+ (11 recommended)
-- Apache Tomcat 9+
-- MySQL 5.7+ / 8.0+
-- (Optional) An IDE such as Eclipse, IntelliJ IDEA or NetBeans
-
-1. Clone the repository
-```bash
-git clone https://github.com/Deeghau0816/Travel-mainia.git
-cd Travel-mainia
-```
-
-2. Create and populate the database
-- Create a database (example name `travelmania`) and run the provided SQL script:
-```bash
-# from the repository root
-mysql -u <db_user> -p < travelguid.sql
-# or from mysql client
-# CREATE DATABASE travelmania;
-# USE travelmania;
-# SOURCE path/to/tourguid.sql;
-```
-- Inspect `tourguid.sql` for table names, default users and seeded data.
-
-3. Configure DB connection
-- Locate where JDBC connection details are stored in the project (common places: `WEB-INF/web.xml`, a `db.properties` or inside a servlet/service class).
-
-4. Build & deploy
-- If the project is an Eclipse/IDE web project:
-  - Import the project into Eclipse/IDE as a Dynamic Web Project or existing Maven/Gradle project (if present).
-  - Add the MySQL connector to the project's libraries.
-  - Run on a configured Tomcat server (Start server → publish project).
-- If you prefer manual WAR:
-  - Export a WAR from the IDE or package it with your build tool and copy it to Tomcat’s `webapps` directory.
-  - Start Tomcat and open http://localhost:8080/<your-app-context>
-
-Relevant file:
-- tourguid.sql — https://github.com/Deeghau0816/Travel-mainia/blob/main/tourguid.sql
+- 🏖️ Manage tours, packages, and bookings  
+- 👥 User registration and authentication  
+- 🧩 Full CRUD (Create, Read, Update, Delete) functionality  
+- 🧭 Clean MVC structure (Model–View–Controller)  
+- 🗄️ Persistent storage using **MySQL**  
+- 🔐 Role-based access control (Admin & User)  
+- 📦 Ready-to-import SQL script (`tourguid.sql`)  
 
 ---
+
+## 🛠️ Tech Stack
+
+| Layer | Technologies |
+|-------|---------------|
+| **Frontend** | JSP, HTML, CSS, JavaScript |
+| **Backend** | Java Servlets, JDBC |
+| **Database** | MySQL |
+| **Server** | Apache Tomcat 9+ |
+| **Architecture** | MVC (Model–View–Controller) |
+
+---
+
+## 📁 Project Structure
+
+
 
 ## Project structure suggestion
 
