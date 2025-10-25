@@ -78,5 +78,9 @@ A typical layout for this kind of project:
 
 - Package the app as a WAR and deploy to Tomcat (or another servlet container that supports JSP/Servlet spec).
 - Ensure production DB credentials and connection pool settings are configured via environment variables or secure config files.
-- Consider using a connection pool (Tomcat DBCP / HikariCP) for better performance.
+
+---
+
+##👨‍💻 Author
+- Deeghau Vidarshana(Team Leader), Navoda Dasun, Pawan Nimsara & Luhith Himsara
 
